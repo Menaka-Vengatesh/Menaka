@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width,initial-scale=1.0">
+    <title>Intelligent Admissions</title>
+    </head>
+<body style="background-color:lightyellow;">
+<h1 style="color:blue">UNIVERSITY ADMISSION PREDICTION SYSTEM</h1>
+<h3>Enter your details and get probability of your admission</h3>
+<img src="C:\Users\ELCOT\PycharmProjects\Future of University\Flask\static\img\pro.jpg" height="500px" width="700px" align="right">
+</img>
+<form action="pred" methods=['POST']>
+<label for="gscore">Enter GRE Score</label>
+<input type="text" id="gscore" name="gscore" placeholder="GRE Score(out of 340)" required="required"><br>
+<br><label for="tscore">Enter TOEFL Score</label>
+<input type="text" id="tscore" name="tscore" placeholder="TOEFL Score(out of 120)" required="required"><br>
+    <br><label for="no">Select University No</label>
+    <br><input type="radio" id="no" name="no" value="1">1
+    <br><input type="radio" id="no" name="no" value="2">2
+    <br><input type="radio" id="no" name="no" value="3">3
+    <br><input type="radio" id="no" name="no" value="4">4
+    <br><input type="radio" id="no" name="no" value="5">5<br>
+    <br><label for="sop">Enter SOP</label>
+    <input type="text" id="sop" name="sop" placeholder="SOP(out of 5)" required="required"><br>
+    <br><label for="lor">Enter LOR</label>
+    <input type="text" id="lor" name="lor" placeholder="LOR(out of 5)" required="required"><br>
+    <br><label for="cgpa">Enter CGPA</label>
+    <input type="text" id="cgpa" name="cgpa" placeholder="CGPA(out of 10)" required="required"><br>
+    <br><label for="res">Research</label><br>
+    <br><input type="radio" id="res" name="res" value="Research">Research
+    <br><input type="radio" id="res" name="res" value="No Research">No Research<br>
+    <a href="C:\Users\ELCOT\PycharmProjects\Future of University\Flask\template\chance.html">
+    <br><input type="button" value="Predict"></a>
+
+</form>
+
+</body>
+</html>
